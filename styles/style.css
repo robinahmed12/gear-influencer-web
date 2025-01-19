@@ -37,9 +37,7 @@
 
 /* reset styles */
 
-body {
-    background-color: #efeded;
-}
+
 
 /* reusable styles */
 
@@ -56,6 +54,13 @@ body {
     color: #FFFFFF;
     font-size: 1rem;
     font-weight: bold;
+    position: relative;
+}
+
+.icon-btn {
+    position: absolute;
+    margin-left: 110px;
+    padding-top: 6px;
 }
 
 /* header styles */
@@ -103,8 +108,7 @@ li>a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    border: 1px solid var(---rating-color);
+    gap: 1rem;
 }
 
 .banner-content {
@@ -130,13 +134,16 @@ li>a {
     width: 29rem;
     height: 29rem;
     padding-top: 1.9rem;
-    /* background-image: url('images/rsz_circle_design.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; */
+   
 }
 
 img {
-    width: 100%;
+    width: 440px;
+    height: 414px;
+    background-image: url('images/rsz_circle_design.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 
 
 }
@@ -232,7 +239,6 @@ img {
 }
 
 
-
 .rate p {
     font-size: .88rem;
     font-weight: 800px;
@@ -248,14 +254,97 @@ img {
 }
 
 
-
-
-
-
-
-
 .product-image {
     width: 17rem;
     height: 15rem;
     margin-left: 10px;
 }
+
+
+/* place section styles */
+
+.one-place-container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.parent {
+    display: flex;
+    gap: 95px;
+    margin-top: 80px;
+}
+
+
+.place-content {
+    padding: 23px 0;
+    max-width: 610px;
+    height: 210px;
+    margin: auto 0;
+}
+
+.info {
+    width: 500px;
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(---info--color);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.place-img img {
+    width: 400px;
+    height: 270px;
+}
+
+.place-title{
+    font-size: 38px;
+    font-weight: bold;
+    color: var(---heading-color);
+    
+}
+
+/* footer */
+footer{
+    background-color: #0A0826;
+    margin-top: 5rem;
+    height: 200px;
+}
+
+.container{
+    max-width: 1470px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-content{
+    padding-top: 40px;
+    width: 262px;
+    height: 140px;
+    margin: 0 550px;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+
+.copyright{
+    font-size: .88rem;
+    font-weight: 700;
+    color: var(---copyright--);
+}
+
+.footer-icon {
+    color: #FFFFFF;
+    margin-top: 8px;
+    
+}
+
+.footer-icon i {
+    margin-right: 10px;
+}
+
